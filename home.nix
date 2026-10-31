@@ -5,6 +5,7 @@ imports = [
    ./modules/programs
    ./modules/flakes
    ./profile/desktop/hyprland
+   ./profile/desktop/niri
 ];
 
 

@@ -65,7 +65,10 @@
   services.xserver.enable = true;
   services.displayManager.ly.enable = true;
   programs.hyprland.enable = true;
+  programs.niri.enable = true;
   services.desktopManager.plasma6.enable = true;
+  # Plasma and niri both set a default session, so keep Plasma's as before.
+  services.displayManager.defaultSession = "plasma";
   services.xserver.xkb = {
     layout = "us";
     variant = "";
@@ -153,6 +156,10 @@
   # Install firefox.
   programs.firefox.enable = true;
   programs.zsh.enable = true;
+  programs.nh = {
+    enable = true;
+    flake = "/home/wardar/projects/nixos-config";
+  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -170,7 +177,6 @@
       pkgs.zip
       pkgs.oniux
       pkgs.nwg-displays
-      pkgs.nh
       pkgs.glfw3-minecraft
       pkgs.javaPackages.compiler.temurin-bin.jdk-21
       pkgs.javaPackages.compiler.temurin-bin.jdk-25
