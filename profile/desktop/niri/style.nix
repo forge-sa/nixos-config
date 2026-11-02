@@ -87,6 +87,13 @@ in
           background-effect.blur = true;
         };
       }
+      {
+        # noctalia's blurred wallpaper (wallpaper.overviewEnabled) shows behind the overview.
+        layer-rule = {
+          match._props.namespace = "^noctalia-overview";
+          place-within-backdrop = true;
+        };
+      }
     ];
 
     animations = {

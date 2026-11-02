@@ -35,7 +35,7 @@ in
     "Mod+F".fullscreen-window = { };
     "Mod+I".maximize-column = { };
     "Mod+D".spawn-sh = "noctalia-shell ipc call launcher toggle";
-    "Mod+L".spawn-sh = "noctalia-shell ipc call lockScreen lock";
+    "Mod+Alt+L".spawn-sh = "noctalia-shell ipc call lockScreen lock";
     "Mod+Space".toggle-window-floating = { };
     "Mod+Tab".spawn-sh = "noctalia-shell ipc call controlCenter toggle";
     "Mod+Escape".spawn-sh = "noctalia-shell ipc call sessionMenu toggle";
@@ -43,10 +43,15 @@ in
     "Print".spawn-sh = "/home/wardar/.local/bin/screenshot.sh";
 
     # Window navigation
-    "Mod+Left".focus-column-left = { };
-    "Mod+Right".focus-column-right = { };
+    "Mod+H".focus-column-left = { };
+    "Mod+L".focus-column-right = { };
     "Mod+Up".focus-window-up = { };
     "Mod+Down".focus-window-down = { };
+
+    # Workspaces and overview
+    "Mod+J".focus-workspace-down = { };
+    "Mod+K".focus-workspace-up = { };
+    "Mod+A".toggle-overview = { };
 
     # Volume and brightness
     "XF86AudioRaiseVolume" = locked "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+";
