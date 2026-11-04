@@ -22,7 +22,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
-  outputs = inputs@{ self, nixpkgs, home-manager, claude-code, ... }: {
+  outputs = inputs@{ self, nixpkgs, home-manager, claude-code,  ... }: {
     nixosConfigurations.xpert = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux"; 
         specialArgs = {
