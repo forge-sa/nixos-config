@@ -62,7 +62,6 @@ imports = [
     python3
     renpy
     cargo
-    godot
   ];
 }
 
