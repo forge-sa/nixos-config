@@ -61,6 +61,7 @@ imports = [
     python3
     renpy
     cargo
+    chromium
   ];
 }
 

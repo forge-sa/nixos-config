@@ -120,7 +120,7 @@
   users.users."wardar" = {
     isNormalUser = true;
     description = "wardar";
-    extraGroups = [ "networkmanager" "wheel" "audio" "input" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" "input" "adbusers" "kvm"];
     shell = pkgs.zsh;
     packages = with pkgs; [
     ];
